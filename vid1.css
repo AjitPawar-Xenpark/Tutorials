@@ -1,0 +1,28 @@
+body, html{
+    height: 100%;
+
+}
+.container{
+    border: 3px solid rgb(0, 12, 12);
+    height: 20%;
+    background-color:aqua;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(24, 14, 33);
+    display: flex;
+}
+
+.home{
+    
+background-color:rgb(232, 123, 22);
+}
+.search{
+   
+background-color: rgb(120, 114, 203);
+}
+.logout{
+   
+    background-color: rgb(22, 149, 0);
+
+}
