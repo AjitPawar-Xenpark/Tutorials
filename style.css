@@ -777,3 +777,79 @@ h2{
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
+
+
+             /********** Contact Form **********/
+
+@media (min-width: 768px){
+.contact_form {
+             padding-top: 5rem;
+}
+}
+
+.dp_form_main_div {
+    border-width: 2px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(255 255 255/var(--tw-border-opacity));
+    background: linear-gradient(209.73deg,rgba(118,46,143,.105) -13.73%,#fff6 123.41%),linear-gradient(0deg,#fff,#fff);
+    box-shadow: 17px 15px 69px 2px #00000021;
+}
+
+
+.small-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 73.75rem;
+    padding: 0 0.9375rem;
+}
+
+@media (min-width: 768px){
+.dp-tab-menu-contact {
+    gap: 5.875rem;
+}
+}
+
+
+.dp-tab-menu-contact {
+    margin: 4rem auto auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    overflow-x: auto;
+    border-radius: 2.875rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    padding: 0.625rem;
+}
+
+
+@media (min-width: 768px){
+.dp-btn-cnt-tab-menu {
+    white-space: normal;
+    padding: 0.625rem 1.5rem;
+    font-size: 1.25rem;
+}
+}
+.dp-btn-cnt-tab-menu.active {
+    border-radius: 1.5625rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(201 11 40/var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.dp_contact_title h3{
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    font-size: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgb(43 43 43/var(--tw-text-opacity));
+    
+
+}
