@@ -1,95 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Flex', sans-serif;
-    color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
 }
-body{
-    background-color: rgba(0,0,0,0.1);
-    
+body {
+  background-color: rgba(0, 0, 0, 0.1);
 }
-header nav{
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #334155;
+}
+
+.logo img {
+  height: 40px;
+  border-radius: 5px;
+}
+ul {
+  display: flex;
+
+  justify-content: space-between;
+  flex-basis: 82%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  font-weight: 50;
+  text-decoration: none;
+}
+
+ul li:not(:last-child) a:hover,
+ul li a.active {
+  text-decoration: underline 2px;
+  text-underline-offset: 4px;
+  color: rgb(172, 172, 249);
+  text-decoration-color: #fff;
+}
+
+.btn {
+  size: 10px;
+}
+.circle {
+  border-radius: 50%;
+}
+.btn {
+  font-weight: 400;
+  padding: 8px 20px;
+  border: none;
+  background: rgb(106, 106, 245);
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+.call_btn {
+  margin-right: 0rem;
+  border-radius: 9999px;
+  display: inline;
+  --tw-bg-opacity: 1;
+  padding: 1rem;
+}
+.btn:hover {
+  background: rgb(46, 16, 194);
+}
+.hamburger {
+  font-size: 30px;
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 20px;
-    background-color: #334155;
-
-}
-
-.logo img{
-    height: 40px;
-    border-radius: 5px;
-    
-
-}
-ul{
-    display: flex;
-    justify-content: space-between;
-    flex-basis: 44%;
-   
-}
-
-ul li{
-    list-style-type: none;
-}
-
-ul li a{
-    
-    font-weight: 50;
-    text-decoration: none;
-}
-
-ul li:not(:last-child) a:hover,ul li a.active{
-    text-decoration: underline 2px  ;
-    text-underline-offset: 4px;
-    color:rgb(125, 125, 246);
-    text-decoration-color:#fff ;
-}
-
-.btn{
-    font-weight: 600;
-    padding: 8px 20px;
-    border: none;
-    background: rgb(106, 106, 245);
-    border-radius: 6px;
     cursor: pointer;
-    color:white;
-    
-}
-.btn:hover{
-    background: rgb(46, 16, 194);
-}
-.hamburger{
-    font-size: 30px;
+  }
+  ul {
     display: none;
-
+  }
+  ul.ham_active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: 320px;
+    width: 100%;
+    background-color: #30363f;
+    gap: 24px;
+  }
 }
 
-@media screen and (max-width:1024px) {
-    .hamburger{
-        display: flex;
-        cursor: pointer;
-    }
-    ul{
-        display: none;
-    }
-    ul.ham_active{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position:absolute;
-        top: 60px;
-        left: 0;
-        height: 320px;
-        width: 100%;
-        background-color: #30363f;
-        gap: 24px;
+/******* Hero Title ********/
+.hero-title-info {
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+}
 
-    }
+p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hero_title_info {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+  }
+}
+
+.h2black {
+  color: black;
+}
+
+.h2red {
+  color: #c90b28;
+  font-size: 3rem;
+}
+
+.div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.div2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.down {
+  color: black;
+}
+.red {
+  color: #c90b28;
+  font-size: 3rem;
+}
+p{
+    margin-top: 8px;
+    font-size: 0.8rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    color: black;
+}
+.last-line{
     
+
 }
