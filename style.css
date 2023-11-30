@@ -14,7 +14,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 20px;
+  padding: 20px 10px;
   background-color: #334155;
 }
 
@@ -31,6 +31,11 @@ ul {
 
 ul li {
   list-style-type: none;
+}
+
+ul li .lets{
+    margin-right: 22px;
+    background: rgb(106, 106, 245);
 }
 
 ul li a {
@@ -62,8 +67,9 @@ ul li a.active {
   color: white;
 }
 .call_btn {
+    align-items: flex-end;
   margin-right: 0rem;
-  border-radius: 9999px;
+  border-radius: 50%;
   display: inline;
   --tw-bg-opacity: 1;
   padding: 1rem;
@@ -92,7 +98,7 @@ ul li a.active {
     position: absolute;
     top: 60px;
     left: 0;
-    height: 320px;
+    height: 350px;
     width: 100%;
     background-color: #30363f;
     gap: 24px;
@@ -121,6 +127,8 @@ p {
 }
 @media (min-width: 768px) {
   h2 {
+    font-weight: 500;
+    font-family: system-ui;
     font-size: 3rem;
     line-height: 3.75rem;
   }
@@ -155,14 +163,115 @@ p {
   font-size: 3rem;
 }
 p{
-    margin-top: 8px;
+    margin-top: -5px;
     font-size: 0.8rem;
     line-height: 1.75rem;
     font-weight: 400;
     color: rgb(255 255 255 / var(--tw-text-opacity));
     color: black;
 }
-.last-line{
-    
+.para{
+    text-align: center;
+    padding-top: 15px;
+}
+.grid-main{
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.grid-main >div{
+    background-color: white;
+    width: 130px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 30px;
+    height: 100px;
+    border-radius: 15px;
+   
+}
+
+.middle{
+    font-size: 16px;
+    font-weight: 200;
+}
+.middle-bottom{
+    font-size: 16px;
+    font-weight: 200;
 
 }
+.tal{
+    font-size: 11px;
+    font-weight: 1000;
+    margin: -10px;
+}
+.net{
+    font-size: 8px;
+    font-weight: 200;
+    padding-top: 2px;
+}
+
+
+.div-1{
+    display: grid;
+}
+.fa-users{
+    font-size: 24px;
+    margin-top: 20px;
+    color: #e74860;
+}
+.fa-retweet{
+    font-size: 24px;
+    margin-top: 20px;
+    color: #e74860;
+}
+.fa-support{
+    font-size: 24px;
+    margin-top: 20px;
+    color: #e74860;
+}
+.fa-chain{
+    font-size: 24px;
+    margin-top: 20px;
+    color: #e74860;
+
+}
+.fa-file-text{
+    font-size: 24px;
+    margin-top: 20px;
+    color: #e74860;
+}
+
+.our-ex{
+    background-color: black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    border-bottom: 1px rgb(246 246 246/var(--tw-border-opacity));
+    height: 20vh;
+    
+}
+
+#our{
+    margin-top: 40px;
+    font-size: 10px;
+    font-weight: 500;
+}
+.we{
+    font: menu;
+    font-weight: 50;
+    font-size: 30px;
+    
+}
+.we::after{
+    
+    content: "";
+    display: block;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+
+}
+
+
