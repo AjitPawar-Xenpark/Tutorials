@@ -86,6 +86,7 @@ ul li a.active {
   .hamburger {
     display: flex;
     cursor: pointer;
+    width: 5%;
   }
   ul {
     display: none;
@@ -126,13 +127,20 @@ p {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
-  h2 {
+  h2, p, .div2 {
     font-weight: 500;
     font-family: system-ui;
     font-size: 3rem;
     line-height: 3.75rem;
   }
 }
+@media (min-width: 768px) {
+.hero_title_info {
+      display: block;
+    }
+  }
+
+
 
 .h2black {
   color: black;
@@ -140,7 +148,7 @@ p {
 
 .h2red {
   color: #c90b28;
-  font-size: 3rem;
+  
 }
 
 .div1 {
@@ -160,7 +168,7 @@ p {
 }
 .red {
   color: #c90b28;
-  font-size: 3rem;
+  
 }
 p{
     margin-top: -5px;
@@ -179,19 +187,26 @@ p{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: -58px;
+    flex-wrap: wrap;
 }
 .grid-main >div{
     background-color: white;
-    width: 130px;
+    width: 214px;
     margin: 10px;
     text-align: center;
     line-height: 30px;
     font-size: 30px;
-    height: 100px;
+    height: 110px;
     border-radius: 15px;
    
 }
+/* @media (min-width: 768px) {
+    .grid-main{
+        flex-direction: row;
+    }
 
+} */
 .middle{
     font-size: 16px;
     font-weight: 200;
@@ -202,13 +217,13 @@ p{
 
 }
 .tal{
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 1000;
     margin: -10px;
 }
 .net{
-    font-size: 8px;
-    font-weight: 200;
+    font-size: 12px;
+    
     padding-top: 2px;
 }
 
@@ -244,34 +259,138 @@ p{
 }
 
 .our-ex{
-    background-color: black;
+    background-color: #2e2a2a;
     display: grid;
     align-items: center;
     justify-content: center;
     gap: 0px;
     border-bottom: 1px rgb(246 246 246/var(--tw-border-opacity));
-    height: 20vh;
+        margin-bottom: -41px;
     
 }
 
 #our{
-    margin-top: 40px;
+    
+    margin-left: -33%;
+    margin-top: 75px;
     font-size: 10px;
     font-weight: 500;
 }
 .we{
+    margin-left: -33%;
     font: menu;
     font-weight: 50;
     font-size: 30px;
+    margin-bottom: 300px;
+    width: 166%;
     
 }
 .we::after{
-    
-    content: "";
+    content: " ";
     display: block;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid ;
     margin-top: 10px;
+    border-width: 50%;
 
+}
+.last{
+    background-color: #2e2a2a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 237px;
+    margin-top: -270px;
+}
+.last>div{
+    background-color: black;
+    width: 341px;
+    margin: 23px;
+    padding-left: 20px;
+    line-height: 75px;
+    font-size: 16px;
+    color: white;
+    margin-top: 0px;
+}
+
+.ent{
+    color: #2e2a2a;
+    padding-left: 20px;
+    margin-top: 0px;
 }
 
 
+
+/* General Styles */
+/* Responsive Styles */
+/* @media only screen and (max-width: 768px) {
+  
+    .grid-main {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+} */
+
+
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    color: #fff;
+}
+
+/* Add your existing CSS styles here */
+
+/* General Styles */
+
+/* Responsive Styles */
+@media only screen and (max-width: 1024px) {
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.ham_active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        height: 350px;
+        width: 100%;
+        background-color: #30363f;
+        gap: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-main {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        margin-top: 20px;
+        margin-bottom: -60px;
+    }
+
+    .h2size {
+        margin-top: 50px;
+    }
+
+    .we {
+        margin-left: 0;
+        font-size: 24px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .last {
+        margin-top: 20px;
+    }
+}
