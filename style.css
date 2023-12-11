@@ -470,6 +470,24 @@ section {
     padding-bottom: 5rem;
 }
 }
+
+.gridsys{
+    display: grid;
+
+}
+
+@media (min-width: 1024px) {
+    .gridsys {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 600px) {
+    .gridsys {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
 .main-container {
     margin: 0 auto;
     width: 100%;
@@ -483,18 +501,18 @@ section {
     padding-right: 1.875rem;
 }
 }
-.clients_title {
+.clients-title {
     padding-bottom: 2rem;
 }
 
 
 @media (min-width: 768px){
-.clients_title h2 {
+.clients-title h2 {
     font-size: 3.125rem;
     line-height: 4rem;
 }
 }
-.clients_title h2 {
+.clients-title h2 {
     text-align: center;
     
     font-weight: 400;
@@ -518,10 +536,13 @@ section {
 }
 
 .client_logo_em {
-    margin: 0;
-    padding: 1rem;
+    display: grid;
+    outline-width: 2px;
     outline-style: solid;
-    outline-width: 1px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
     outline-color: #f1f1f1;
 }
 @media (min-width: 768px){
@@ -529,6 +550,9 @@ section {
     padding: 1.5rem;
 }
 }
+
+
+
 @media (min-width: 768px){
 .client_logo_em img {
     max-width: 9rem;
@@ -541,7 +565,65 @@ section {
     -o-object-fit: contain;
     object-fit: contain;
 }
-/**** images twelve end *****/
+
+
+                /**** images twelve end *****/
+
+
+
+
+
+
+
+
+
+                /***** six images  START *****/
+
+
+@media (min-width: 768px){
+.affi-title h2 {
+    font-size: 3.125rem;
+    line-height: 4rem;
+}
+}
+.six-logo{
+  background-color: currentColor;
+}
+  
+
+
+.affi-title h2{
+    
+padding-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(14 14 14 / var(--tw-text-opacity));
+
+}
+.affi-grid{
+  display: grid;
+  align-items: center;
+  gap: .75rem;
+}
+
+@media (min-width: 768px){
+.affi-title h2 {
+    font-size: 3.125rem;
+    line-height: 4rem;
+}
+}
+@media (min-width: 1024px) {
+  .affi-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+
+
+
+/**** six images  END *****/
 
 
 
@@ -624,9 +706,10 @@ rem
 }
 
 .expertise-heading {
+  padding-left: 2.3rem;
     --tw-border-opacity: 1;
-    border-bottom: 1px rgb(246 246 246/var(--tw-border-opacity));
-    border-style: solid;
+    border-bottom: 1px solid;
+    
     padding-bottom: 0.75rem;
 }
 @media (min-width: 768px){
