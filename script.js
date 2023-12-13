@@ -51,12 +51,12 @@ hamburger.addEventListener('click',()=>{
 
 //Slider JS Start
 function first(){
-    document.getElementById("slideimage").src="./images/digital-marketing.webp";
+    document.getElementById("slideimage").src="./images/frontend-development.webp";
 }
 
 
 function second(){
-    document.getElementById("slideimage").src="./images/e-Commerce-development.jpg";
+    document.getElementById("slideimage").src="./images/vinay_sir.jpg";
 }
 
 
