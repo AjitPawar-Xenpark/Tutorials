@@ -16,58 +16,58 @@ hamburger.addEventListener('click',()=>{
 
 
 
+//*********  automatic slider start  ********/
+let slides=document.getElementsByClassName("slides");
+let navlinks=document.getElementsByClassName("dot");
+let currentSlide=0;
+
+document.getElementById("next").addEventListener("click", ()=>{
+    changeSlide(currentSlide + 1);
+});
 
 
-// const slides=document.querySelectorAll(".slide")
-// var counter=0;
-// /// console.log(slides)
-// slides.forEach(
-//     (slide,index)=>{
-//         slide.style.left=`${index*100}%`
-//     }
-// )
+document.getElementById("prev").addEventListener("click", ()=>{
+    changeSlide(currentSlide - 1);
+});
 
-
-// const goNext = () => {
-//     if (counter < slides.length - 1) {
-//     counter++;
-//     slideImage();
-//     }
-//     };
-//     const goPrev = () => {
-//     if (counter != 0) {
-//     counter--;
-//     slideImage();
-//     }
-//     };
-
-// const slideImage=()=>{
-//     slides.forEach(
-//         (slide)=>{
-//             slide.style.transform=`translateX(-${counter*100}%)`
-//         }
-//     )
-// }
-
-//Slider JS Start
-function first(){
-    document.getElementById("slideimage").src="./images/frontend-development.webp";
+function changeSlide(moveTo){
+    if(moveTo>=slides.length){
+        moveTo=0;
+    }
+    if(moveTo<0){
+        moveTo=slides.length-1;
+    }
+    slides[currentSlide].classList.toggle("active");
+    navlinks[currentSlide].classList.toggle("activeDot");
+    slides[moveTo].classList.toggle("active");
+    navlinks[moveTo].classList.toggle("activeDot");
+    currentSlide=moveTo;
 }
 
+document.querySelectorAll(".dot").forEach((bullet,bulletIndex)=>{
+    bullet.addEventListener("click",()=>{
+        if(currentSlide !==bulletIndex){
+            changeSlide(bulletIndex);
+        }
+    });
+});
 
-function second(){
-    document.getElementById("slideimage").src="./images/vinay_sir.jpg";
-}
+// window.onload=setInterval(function()
+// {
+//     changeSlide(currentSlide+1)
+// },2000);
 
-
-function third(){
-    document.getElementById("slideimage").src="./images/Hire_Dedicated_Talent.jpg";
-}
-
+//**** automatic slider end */
 
 
 
 
-setInterval(first,1000);
-setInterval(second,2000);
-setInterval(third,4000);
+
+
+
+
+
+
+
+
+
