@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+  color: #fff;
+}
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/******* NAV BAR START ********/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+  
+  header nav {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: #334155;
+  }
+  
+  .logo img {
+    height: 40px;
+    border-radius: 5px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 82%;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  ul li .lets {
+    margin-right: 22px;
+    background: rgb(106, 106, 245);
+  }
+  
+  ul li a {
+    font-weight: 50;
+    text-decoration: none;
+  }
+  
+  ul li:not(:last-child) a:hover,
+  ul li a.active {
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+    color: rgb(172, 172, 249);
+    text-decoration-color: #fff;
+  }
+  
+  .btn {
+    size: 10px;
+  }
+  .circle {
+    border-radius: 50%;
+  }
+  .btn {
+    font-weight: 400;
+    padding: 8px 20px;
+    border: none;
+    background: rgb(106, 106, 245);
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  .call_btn {
+    align-items: flex-end;
+    margin-right: 0rem;
+    border-radius: 50%;
+    display: inline;
+    --tw-bg-opacity: 1;
+    padding: 1rem;
+  }
+  .btn:hover {
+    background: rgb(46, 16, 194);
+  }
+  .hamburger {
+    font-size: 30px;
+    display: none;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hamburger {
+      display: flex;
+      cursor: pointer;
+      width: 5%;
+    }
+    ul {
+      display: none;
+    }
+  
+    header nav ul.ham_active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      height: 350px;
+      width: 100%;
+      background-color: #30363f;
+      gap: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    header nav ul {
+      display: none;
+    }
+  
+    header nav ul.ham_active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      height: 350px;
+      width: 100%;
+      background-color: #30363f;
+      gap: 24px;
+    }
+  }
+  
+  /******* NAV BAR END ********/
+
+
+
+  /******* Black Section Start ********/
+
+  .dp_blog_hero {
+    position: relative;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+
+  .black_section {
+    background: linear-gradient(105.6deg,#000,#393939);
+  }
+
+    .main-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 78.75rem;
+        padding: 0 0.9375rem;
+    }
+
+.dp_blog_title_info h1 {
+    padding-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+@media (min-width: 768px){
+h1 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+}
+}
+
+
+.dp_blog_title_info h1, .dp_blog_title_info p {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+}
+
+.dp_blog_title_info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+  /******* Black Section End ********/
+
+
+  /******* Hire developer Section Start ********/
+
+  @media (min-width: 768px){
+.bread_crumbs_menu_main {
+    padding-top: 3rem;
+}
+}
+
+.bread_crumbs_menu_main {
+    padding-bottom: 0;
+    /* padding-top: 1.75rem; */
+}
+
+@media (min-width: 768px){
+.breadcrumbs {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    gap: 1.25rem;
+}
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+menu, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    --tw-text-opacity: 1;
+    color: rgb(64 64 64/var(--tw-text-opacity));
+}
+
+a {
+    
+    text-decoration: inherit;
+}
+
+
+@media (min-width: 768px){
+.line {
+    width: 4.625rem;
+}
+}
+
+.line {
+    height: 0.0625rem;
+    
+    --tw-bg-opacity: 1;
+    background-color: rgb(14 14 14/var(--tw-bg-opacity));
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(105 105 105/var(--tw-text-opacity));
+}
+
+.breadcrumbs .active {
+    font-weight: 800;
+}
+
+.breadcrumbs p:last-child {
+    display: none;
+}
+@media (min-width: 768px){
+.line {
+    width: 4.625rem;
+}
+}
+.breadcrumbs p:last-child {
+    display: none;
+}
+.hire-ul{
+    display: flex;
+    align-items: center;   
+    justify-content: start; 
+
+}
+
+/******* Hire developer section End ********/
+section{
+
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+}
+.frontend_info_main h2 {
+    padding-bottom: 2rem;
+    color: #0E0E0E;
+}
+
+.front_dev_counter h2, .frontend_info_main h2 {
+    --tw-text-opacity: 1;
+    color: rgb(14 14 14/var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+}
+
+.frontend_info_main p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgb(64 64 64/var(--tw-text-opacity));
+}
+
+
+
+/******* Customised developer section Start ********/
+
+
+
+/******* Customised developer section End ********/
